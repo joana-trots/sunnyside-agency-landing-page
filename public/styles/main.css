@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: hsl(213deg, 9%, 39%);
+}
+body header {
+  width: 100%;
+  height: 100vh;
+  background: url("../../public/images/desktop/image-header.jpg") no-repeat bottom center/cover;
+}
+body header h1 {
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  color: hsl(0deg, 0%, 100%);
+  text-align: center;
+  font-size: 4rem;
+  letter-spacing: 1rem;
+  padding: 5rem;
+}
+body header div img {
+  margin: 10px 50%;
+}
+body header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 50px;
+}
+body header nav ul {
+  display: flex;
+  gap: 20px;
+}
+body header nav ul li {
+  list-style: none;
+}
+body header nav ul li a {
+  color: hsl(0deg, 0%, 100%);
+}
+body main {
+  display: grid;
+  /* ABOUT */
+  /* SERVICES */
+}
+body main section.about,
+body main section.services {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+body main section.about .text,
+body main section.services .text {
+  padding: 7rem;
+}
+body main section.about .text p,
+body main section.services .text p {
+  color: hsl(232deg, 10%, 55%);
+  line-height: 24px;
+  letter-spacing: 0.02rem;
+  padding-bottom: 2rem;
+}
+body main section.about .text h2,
+body main section.services .text h2 {
+  color: hsl(212deg, 27%, 19%);
+  font-family: "Fraunces", serif;
+  line-height: 3.2rem;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+body main section.about .text a,
+body main section.services .text a {
+  font-family: "Fraunces", serif;
+  color: hsl(212deg, 27%, 19%);
+  text-transform: uppercase;
+  letter-spacing: 0.04rem;
+}
+body main section.about .text a:hover::before,
+body main section.services .text a:hover::before {
+  content: "";
+  position: absolute;
+  margin-left: -5px;
+  margin-top: 14px;
+  height: 10px;
+  width: 142px;
+  background-color: hsl(51deg, 100%, 49%);
+  border-radius: 12px;
+  z-index: -1;
+}
+body main section#about .cover {
+  background: url("../../public/images/desktop/image-transform.jpg") no-repeat center center/cover;
+  grid-column: 2;
+  grid-row: 1;
+}
+body main section#about2 .cover {
+  background: url("../../public/images/desktop/image-stand-out.jpg") no-repeat bottom center/cover;
+}
+body main section#about2 a:hover::before {
+  background-color: hsl(7deg, 99%, 70%);
+}
+body main section.services div:first-child {
+  background: url("../../public/images/desktop/image-graphic-design.jpg") no-repeat center center/cover;
+}
+body main section.services div:first-child h2, body main section.services div:first-child p {
+  color: hsl(167deg, 40%, 24%);
+}
+body main section.services div:last-child {
+  background: url("../../public/images/desktop/image-photography.jpg") no-repeat center center/cover;
+}
+body main section.services div:last-child h2, body main section.services div:last-child p {
+  color: hsl(198deg, 62%, 26%);
+}
+body main section.services .text {
+  text-align: center;
+  padding: 20rem 7rem 1rem;
+}
+body main section.services .text h2 {
+  font-size: 1.8rem;
+  line-height: 2rem;
+  padding-bottom: 1rem;
+}
+body main section.services .text p {
+  width: 90%;
+  margin-left: 5%;
+}
+
+/*# sourceMappingURL=main.css.map */
