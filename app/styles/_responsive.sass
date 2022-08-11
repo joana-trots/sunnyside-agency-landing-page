@@ -30,12 +30,20 @@
 @media screen and (max-width: 696px)
     body
         header
+            .logo img
+                //width: 180px
             h1
                 font-size: 2.3rem
                 padding: 1rem
                 letter-spacing: .8rem
+            a
+                color: $dark_grayish_blue
+                
             nav
-                padding: 40px 2rem 80px
+                padding: 40px 1.3rem 80px
+                &.mobile_menu
+                    &::after
+                        display: block
                 ul
                     display: none
         main
