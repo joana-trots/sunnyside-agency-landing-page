@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500;600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -14,11 +14,13 @@ body {
   overflow-x: hidden;
   font-family: "Barlow", sans-serif;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   color: hsl(213deg, 9%, 39%);
+  /* HEADER */
+  /* FOOTER */
 }
 body header {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background: url("../../public/images/desktop/image-header.jpg") no-repeat bottom center/cover;
 }
@@ -35,39 +37,47 @@ body header h1 {
 body header div img {
   margin: 10px 50%;
 }
-body header nav {
+body header a {
+  color: hsl(0deg, 0%, 100%);
+}
+body nav {
   display: flex;
   justify-content: space-between;
-  padding: 40px 50px;
+  padding: 40px 50px 80px;
 }
-body header nav ul {
+body nav ul {
   display: flex;
-  gap: 20px;
+  gap: 40px;
 }
-body header nav ul li {
+body nav ul li {
   list-style: none;
-}
-body header nav ul li a {
-  color: hsl(0deg, 0%, 100%);
 }
 body main {
   display: grid;
   /* ABOUT */
   /* SERVICES */
+  /* TESTIMONIALS */
+  /* PROJECTS */
 }
 body main section.about,
 body main section.services {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+body main section.about div,
+body main section.services div {
+  min-height: 350px;
+}
 body main section.about .text,
 body main section.services .text {
   padding: 7rem;
+  margin: auto;
+  max-width: calc(500px + 14rem);
 }
 body main section.about .text p,
 body main section.services .text p {
   color: hsl(232deg, 10%, 55%);
-  line-height: 24px;
+  line-height: 26px;
   letter-spacing: 0.02rem;
   padding-bottom: 2rem;
 }
@@ -85,15 +95,17 @@ body main section.services .text a {
   color: hsl(212deg, 27%, 19%);
   text-transform: uppercase;
   letter-spacing: 0.04rem;
+  font-weight: 900;
+  font-size: 15px;
 }
 body main section.about .text a:hover::before,
 body main section.services .text a:hover::before {
   content: "";
   position: absolute;
-  margin-left: -5px;
-  margin-top: 14px;
+  margin-left: -8px;
+  margin-top: 12px;
   height: 10px;
-  width: 142px;
+  width: 130px;
   background-color: hsl(51deg, 100%, 49%);
   border-radius: 12px;
   z-index: -1;
@@ -109,16 +121,16 @@ body main section#about2 .cover {
 body main section#about2 a:hover::before {
   background-color: hsl(7deg, 99%, 70%);
 }
-body main section.services div:first-child {
+body main section.services .cover:first-child {
   background: url("../../public/images/desktop/image-graphic-design.jpg") no-repeat center center/cover;
 }
-body main section.services div:first-child h2, body main section.services div:first-child p {
+body main section.services .cover:first-child h2, body main section.services .cover:first-child p {
   color: hsl(167deg, 40%, 24%);
 }
-body main section.services div:last-child {
+body main section.services .cover:last-child {
   background: url("../../public/images/desktop/image-photography.jpg") no-repeat center center/cover;
 }
-body main section.services div:last-child h2, body main section.services div:last-child p {
+body main section.services .cover:last-child h2, body main section.services .cover:last-child p {
   color: hsl(198deg, 62%, 26%);
 }
 body main section.services .text {
@@ -128,11 +140,150 @@ body main section.services .text {
 body main section.services .text h2 {
   font-size: 1.8rem;
   line-height: 2rem;
-  padding-bottom: 1rem;
+  padding-bottom: 1.4rem;
 }
 body main section.services .text p {
-  width: 90%;
-  margin-left: 5%;
+  max-width: 350px;
+  margin: auto;
+  font-size: 15px;
+}
+body main section.testimonials {
+  padding: 7rem;
+  text-align: center;
+}
+body main section.testimonials .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+body main section.testimonials .wrapper div {
+  max-width: 310px;
+  margin: auto;
+  padding-top: 3rem;
+}
+body main section.testimonials img {
+  border-radius: 50%;
+  width: 80px;
+  margin-bottom: 3.4rem;
+}
+body main section.testimonials h3 {
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  color: hsl(210deg, 4%, 67%);
+  letter-spacing: 0.3rem;
+}
+body main section.testimonials p {
+  line-height: 26px;
+}
+body main section.testimonials p.client_name {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  color: hsl(212deg, 27%, 19%);
+  margin-top: 3.4rem;
+}
+body main section.testimonials p small {
+  color: hsl(210deg, 4%, 67%);
+}
+body main section.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #333;
+}
+body main section.gallery img {
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+}
+body main section.gallery img:hover {
+  opacity: 0.5;
+}
+body footer {
+  background-color: hsl(168deg, 45%, 68%);
+  text-align: center;
+  padding: 4rem;
+  color: hsl(168deg, 34%, 41%);
+}
+body footer nav {
+  display: flex !important;
+  justify-content: center;
+}
+body footer .social_media {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+body footer .social_media svg {
+  fill: #2C7566;
+}
+body footer .social_media svg:hover {
+  fill: #fff;
+}
+body footer a:hover {
+  color: hsl(0deg, 0%, 100%);
+}
+
+@media screen and (min-width: 1441px) {
+  body main section.about,
+body main section.services {
+    min-height: 80vh;
+  }
+}
+@media screen and (max-width: 900px) {
+  body header h1 {
+    font-size: 3rem;
+  }
+  body main section.about,
+body main section.services {
+    grid-template-columns: repeat(auto-fill, minmax(calc(300px + 3rem), 1fr));
+  }
+  body main section.about .text,
+body main section.services .text {
+    padding: 3rem;
+  }
+  body main section.about .text h2,
+body main section.services .text h2 {
+    line-height: normal;
+    font-size: 2rem;
+  }
+  body main section.services .text {
+    padding: 16rem 3rem 1rem;
+  }
+  body main section.testimonials {
+    padding: 4rem 3rem;
+  }
+  body main section.gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 696px) {
+  body header h1 {
+    font-size: 2.3rem;
+    padding: 1rem;
+    letter-spacing: 0.8rem;
+  }
+  body header nav {
+    padding: 40px 2rem 80px;
+  }
+  body header nav ul {
+    display: none;
+  }
+  body main section.about,
+body main section.services {
+    width: 100vw;
+  }
+  body main section.about .text,
+body main section.services .text {
+    text-align: center;
+  }
+  body main section#about .cover {
+    grid-column: 1;
+  }
+  body main section.testimonials {
+    padding: 4rem 1rem;
+  }
+  body main section.testimonials p.client_name {
+    margin-top: 2.2rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
