@@ -16,15 +16,14 @@ body {
   font-size: 16px;
   font-weight: 500;
   color: hsl(213deg, 9%, 39%);
-  /* HEADER */
-  /* FOOTER */
 }
-body header {
+
+header {
   width: 100vw;
   height: 100vh;
   background: url("../../public/images/desktop/image-header.jpg") no-repeat bottom center/cover;
 }
-body header h1 {
+header h1 {
   text-transform: uppercase;
   font-family: "Fraunces", serif;
   font-weight: 900;
@@ -34,29 +33,30 @@ body header h1 {
   letter-spacing: 1rem;
   padding: 5rem;
 }
-body header div img {
+header div img {
   margin: 10px 50%;
 }
-body header a {
+header a {
   color: hsl(0deg, 0%, 100%);
 }
-body nav {
+
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 40px 50px 80px;
 }
-body nav ul {
+nav ul {
   display: flex;
   gap: 40px;
 }
-body nav ul li {
+nav ul li {
   list-style: none;
 }
-body nav.mobile_menu .burger::after {
+nav.mobile_menu .burger::after {
   content: url('data:image/svg+xml, %3Csvg width="24" height="18" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z" fill="white" fill-rule="evenodd"/%3E%3C/svg%3E');
 }
-body nav.mobile_menu ul {
+nav.mobile_menu ul {
   position: absolute;
   top: 150px;
   flex-direction: column;
@@ -67,7 +67,7 @@ body nav.mobile_menu ul {
   padding: 80px;
   align-items: center;
 }
-body nav.mobile_menu ul::before {
+nav.mobile_menu ul::before {
   content: "";
   position: absolute;
   top: -49px;
@@ -77,10 +77,10 @@ body nav.mobile_menu ul::before {
   border-right: 50px solid hsl(0deg, 0%, 100%);
   border-top: 50px solid transparent;
 }
-body nav.mobile_menu ul li:last-child {
+nav.mobile_menu ul li:last-child {
   margin-top: 20px;
 }
-body nav.mobile_menu ul li:last-child a {
+nav.mobile_menu ul li:last-child a {
   font-family: "Fraunces", serif;
   background-color: hsl(51deg, 100%, 49%);
   color: hsl(212deg, 27%, 19%);
@@ -89,45 +89,46 @@ body nav.mobile_menu ul li:last-child a {
   text-transform: uppercase;
   font-size: 1.5rem;
 }
-body main {
+
+main {
   display: grid;
   /* ABOUT */
   /* SERVICES */
   /* TESTIMONIALS */
   /* PROJECTS */
 }
-body main section.about,
-body main section.services {
+main section.about,
+main section.services {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-body main section.about div,
-body main section.services div {
+main section.about div,
+main section.services div {
   min-height: 350px;
 }
-body main section.about .text,
-body main section.services .text {
+main section.about .text,
+main section.services .text {
   padding: 7rem;
   margin: auto;
   max-width: calc(500px + 14rem);
 }
-body main section.about .text p,
-body main section.services .text p {
+main section.about .text p,
+main section.services .text p {
   color: hsl(232deg, 10%, 55%);
   line-height: 26px;
   letter-spacing: 0.02rem;
   padding-bottom: 2rem;
 }
-body main section.about .text h2,
-body main section.services .text h2 {
+main section.about .text h2,
+main section.services .text h2 {
   color: hsl(212deg, 27%, 19%);
   font-family: "Fraunces", serif;
   line-height: 3.2rem;
   font-size: 3rem;
   padding-bottom: 2rem;
 }
-body main section.about .text a,
-body main section.services .text a {
+main section.about .text a,
+main section.services .text a {
   font-family: "Fraunces", serif;
   color: hsl(212deg, 27%, 19%);
   text-transform: uppercase;
@@ -135,8 +136,8 @@ body main section.services .text a {
   font-weight: 900;
   font-size: 15px;
 }
-body main section.about .text a:hover::before,
-body main section.services .text a:hover::before {
+main section.about .text a:hover::before,
+main section.services .text a:hover::before {
   content: "";
   position: absolute;
   margin-left: -8px;
@@ -147,184 +148,185 @@ body main section.services .text a:hover::before {
   border-radius: 12px;
   z-index: -1;
 }
-body main section#about .cover {
+main section#about .cover {
   background: url("../../public/images/desktop/image-transform.jpg") no-repeat center center/cover;
   grid-column: 2;
   grid-row: 1;
 }
-body main section#about2 .cover {
+main section#about2 .cover {
   background: url("../../public/images/desktop/image-stand-out.jpg") no-repeat bottom center/cover;
 }
-body main section#about2 a:hover::before {
+main section#about2 a:hover::before {
   background-color: hsl(7deg, 99%, 70%);
 }
-body main section.services .cover:first-child {
+main section.services .cover:first-child {
   background: url("../../public/images/desktop/image-graphic-design.jpg") no-repeat center center/cover;
 }
-body main section.services .cover:first-child h2, body main section.services .cover:first-child p {
+main section.services .cover:first-child h2, main section.services .cover:first-child p {
   color: hsl(167deg, 40%, 24%);
 }
-body main section.services .cover:last-child {
+main section.services .cover:last-child {
   background: url("../../public/images/desktop/image-photography.jpg") no-repeat center center/cover;
 }
-body main section.services .cover:last-child h2, body main section.services .cover:last-child p {
+main section.services .cover:last-child h2, main section.services .cover:last-child p {
   color: hsl(198deg, 62%, 26%);
 }
-body main section.services .text {
+main section.services .text {
   text-align: center;
   padding: 20rem 7rem 1rem;
 }
-body main section.services .text h2 {
+main section.services .text h2 {
   font-size: 1.8rem;
   line-height: 2rem;
   padding-bottom: 1.4rem;
 }
-body main section.services .text p {
+main section.services .text p {
   max-width: 350px;
   margin: auto;
   font-size: 15px;
 }
-body main section.testimonials {
+main section.testimonials {
   padding: 7rem;
   text-align: center;
 }
-body main section.testimonials .wrapper {
+main section.testimonials .wrapper {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
-body main section.testimonials .wrapper div {
+main section.testimonials .wrapper div {
   max-width: 310px;
   margin: auto;
   padding-top: 3rem;
 }
-body main section.testimonials img {
+main section.testimonials img {
   border-radius: 50%;
   width: 80px;
   margin-bottom: 3.4rem;
 }
-body main section.testimonials h3 {
+main section.testimonials h3 {
   text-transform: uppercase;
   font-family: "Fraunces", serif;
   color: hsl(210deg, 4%, 67%);
   letter-spacing: 0.3rem;
 }
-body main section.testimonials p {
+main section.testimonials p {
   line-height: 26px;
 }
-body main section.testimonials p.client_name {
+main section.testimonials p.client_name {
   font-family: "Fraunces", serif;
   font-weight: 900;
   color: hsl(212deg, 27%, 19%);
   margin-top: 3.4rem;
 }
-body main section.testimonials p small {
+main section.testimonials p small {
   color: hsl(210deg, 4%, 67%);
 }
-body main section.gallery {
+main section.gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   background-color: #333;
 }
-body main section.gallery img {
+main section.gallery img {
   width: 100%;
   height: 100%;
   transition: 0.4s;
 }
-body main section.gallery img:hover {
+main section.gallery img:hover {
   opacity: 0.5;
 }
-body footer {
+
+footer {
   background-color: hsl(168deg, 45%, 68%);
   text-align: center;
   padding: 4rem;
   color: hsl(168deg, 34%, 41%);
 }
-body footer nav {
+footer nav {
   display: flex !important;
   justify-content: center;
 }
-body footer .social_media {
+footer .social_media {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
-body footer .social_media svg {
+footer .social_media svg {
   fill: #2C7566;
 }
-body footer .social_media svg:hover {
+footer .social_media svg:hover {
   fill: #fff;
 }
-body footer a:hover {
+footer a:hover {
   color: hsl(0deg, 0%, 100%);
 }
 
 @media screen and (min-width: 1441px) {
-  body main section.about,
-body main section.services {
+  main section.about,
+main section.services {
     min-height: 80vh;
   }
 }
 @media screen and (max-width: 900px) {
-  body header h1 {
+  header h1 {
     font-size: 3rem;
   }
-  body main section.about,
-body main section.services {
+  main section.about,
+main section.services {
     grid-template-columns: repeat(auto-fill, minmax(calc(300px + 3rem), 1fr));
   }
-  body main section.about .text,
-body main section.services .text {
+  main section.about .text,
+main section.services .text {
     padding: 3rem;
   }
-  body main section.about .text h2,
-body main section.services .text h2 {
+  main section.about .text h2,
+main section.services .text h2 {
     line-height: normal;
     font-size: 2rem;
   }
-  body main section.services .text {
+  main section.services .text {
     padding: 16rem 3rem 1rem;
   }
-  body main section.testimonials {
+  main section.testimonials {
     padding: 4rem 3rem;
   }
-  body main section.gallery {
+  main section.gallery {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (max-width: 696px) {
-  body header h1 {
+  header h1 {
     font-size: 2.3rem;
     padding: 1rem;
     letter-spacing: 0.8rem;
   }
-  body header a {
+  header a {
     color: hsl(232deg, 10%, 55%);
   }
-  body header nav {
+  nav {
     padding: 40px 1.3rem 80px;
   }
-  body header nav.mobile_menu::after {
+  nav.mobile_menu::after {
     display: block;
   }
-  body header nav ul {
+  nav ul {
     display: none;
   }
-  body main section.about,
-body main section.services {
+  main section.about,
+main section.services {
     width: 100vw;
   }
-  body main section.about .text,
-body main section.services .text {
+  main section.about .text,
+main section.services .text {
     text-align: center;
   }
-  body main section#about .cover {
+  main section#about .cover {
     grid-column: 1;
   }
-  body main section.testimonials {
+  main section.testimonials {
     padding: 4rem 1rem;
   }
-  body main section.testimonials p.client_name {
+  main section.testimonials p.client_name {
     margin-top: 2.2rem;
   }
 }

@@ -1,0 +1,42 @@
+nav
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 40px 50px 80px 
+    ul
+        display: flex
+        gap: 40px
+        li
+            list-style: none
+    &.mobile_menu
+        .burger::after
+            content: url('data:image/svg+xml, %3Csvg width="24" height="18" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z" fill="white" fill-rule="evenodd"/%3E%3C/svg%3E')
+        ul
+            position: absolute
+            top: 150px
+            flex-direction: column
+            background-color: $white
+            width: calc(100% - 2.6rem)
+            font-size: 2rem
+            gap:40px
+            padding: 80px
+            align-items: center
+            &::before
+                content: ''
+                position: absolute
+                top: -49px
+                right: 0
+                width: 0px
+                height: 0px
+                border-right: 50px solid $white
+                border-top: 50px solid transparent
+            li:last-child 
+                margin-top: 20px
+                a
+                    font-family: $ff-serif
+                    background-color: $yellow
+                    color: $very_dark_desaturated_blue
+                    padding: 20px 40px
+                    border-radius: 50px
+                    text-transform: uppercase
+                    font-size: 1.5rem
