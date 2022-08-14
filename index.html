@@ -117,30 +117,6 @@
         </a>
       </div>
     </footer>
-
-    <script>
-      mobileMenu.elem = document.getElementsByTagName('nav')[0];
-      burger = document.getElementsByClassName('burger')[0];
-
-      function mobileMenu(a) {
-        mobileMenu.elem.classList[a ? 'add' : 'remove']('mobile_menu');
-      }
-      
-      window.onresize = function() {
-        mobileMenu(this.innerWidth < 697);
-
-        if (mobileMenu.elem.classList.contains('mobile_menu')) {
-          menu = document.getElementsByClassName('mobile_menu')[0].getElementsByTagName('ul')[0];
-          menu.style.display = 'none';
-          burger.addEventListener('click', function(){
-            menu.style.display = menu.style.display === 'none' ? 'flex' : 'none';
-          });
-        } else {
-          menu.style.display = 'flex';
-        }
-
-      }
-      window.onresize();
-    </script>
+    <script src="app/js/mobile-nav.js"></script>
   </body>
 </html>

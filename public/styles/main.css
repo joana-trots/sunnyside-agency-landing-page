@@ -59,6 +59,7 @@ nav.mobile_menu .burger::after {
 nav.mobile_menu ul {
   position: absolute;
   top: 150px;
+  display: none;
   flex-direction: column;
   background-color: hsl(0deg, 0%, 100%);
   width: calc(100% - 2.6rem);
