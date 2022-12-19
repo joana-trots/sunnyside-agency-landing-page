@@ -53,6 +53,9 @@ nav ul {
 nav ul li {
   list-style: none;
 }
+nav.mobile_menu .burger {
+  cursor: pointer;
+}
 nav.mobile_menu .burger::after {
   content: url('data:image/svg+xml, %3Csvg width="24" height="18" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z" fill="white" fill-rule="evenodd"/%3E%3C/svg%3E');
 }
@@ -137,8 +140,8 @@ main section.services .text a {
   font-weight: 900;
   font-size: 15px;
 }
-main section.about .text a:hover::before,
-main section.services .text a:hover::before {
+main section.about .text a::before,
+main section.services .text a::before {
   content: "";
   position: absolute;
   margin-left: -8px;
@@ -148,6 +151,11 @@ main section.services .text a:hover::before {
   background-color: hsl(51deg, 100%, 49%);
   border-radius: 12px;
   z-index: -1;
+  opacity: 0.5;
+}
+main section.about .text a:hover::before,
+main section.services .text a:hover::before {
+  opacity: 1;
 }
 main section#about .cover {
   background: url("../../public/images/desktop/image-transform.jpg") no-repeat center center/cover;
@@ -157,7 +165,7 @@ main section#about .cover {
 main section#about2 .cover {
   background: url("../../public/images/desktop/image-stand-out.jpg") no-repeat bottom center/cover;
 }
-main section#about2 a:hover::before {
+main section#about2 a::before {
   background-color: hsl(7deg, 99%, 70%);
 }
 main section.services .cover:first-child {
@@ -262,12 +270,6 @@ footer a:hover {
   color: hsl(0deg, 0%, 100%);
 }
 
-@media screen and (min-width: 1441px) {
-  main section.about,
-main section.services {
-    min-height: 80vh;
-  }
-}
 @media screen and (max-width: 900px) {
   header h1 {
     font-size: 3rem;

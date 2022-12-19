@@ -29,7 +29,7 @@ Users should be able to:
 
 - Solution URL: https://github.com/joana-trots/sunnyside-agency-landing-page
 - Live Site URL: https://joana-trots.github.io/sunnyside-agency-landing-page 
-## My process
+
 
 ### Built with
 

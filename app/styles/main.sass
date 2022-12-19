@@ -1,5 +1,4 @@
 @import _root
-
 @import _header
 @import _navigation
     
@@ -35,7 +34,7 @@ main
                 letter-spacing: .04rem
                 font-weight: $fw-serif-bolder
                 font-size: 15px
-                &:hover::before
+                &::before
                     content:''
                     position: absolute
                     margin-left: -8px
@@ -44,7 +43,10 @@ main
                     width: 130px
                     background-color: $yellow
                     border-radius: 12px
-                    z-index: -1       
+                    z-index: -1
+                    opacity: .5
+                &:hover::before
+                    opacity: 1     
     section#about .cover
         background: url('../../public/images/desktop/image-transform.jpg') no-repeat center center / cover
         grid-column: 2
@@ -52,8 +54,8 @@ main
     section#about2 
         .cover
             background: url('../../public/images/desktop/image-stand-out.jpg') no-repeat bottom center / cover
-        a:hover::before
-                background-color: $red
+        a::before
+            background-color: $red
 
     /* SERVICES */
     section.services
@@ -121,5 +123,4 @@ main
                 opacity: .5
 
 @import _footer
-
 @import _responsive
