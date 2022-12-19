@@ -27,10 +27,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://github.com/joana-trots/sunnyside-agency-landing-page)
+- Solution URL: https://github.com/joana-trots/sunnyside-agency-landing-page
+- Live Site URL: https://joana-trots.github.io/sunnyside-agency-landing-page 
 
-
-## My process
 
 ### Built with
 
