@@ -1,28 +1,22 @@
-@media screen and (min-width: 1441px)
-    main
-        section.about,
-        section.services
-            //min-height: 80vh
-
 @media screen and (max-width: 900px)
     header
         h1
             font-size: 3rem
     main
-        section.about,
-        section.services
+        .about,
+        .services
             grid-template-columns: repeat(auto-fill, minmax(calc(300px + 3rem), 1fr))
             .text
                 padding: 3rem
                 h2
                     line-height: normal
                     font-size: 2rem
-        section.services
+        .services
             .text
                 padding: 16rem 3rem 1rem
-        section.testimonials
+        .testimonials
             padding: 4rem 3rem
-        section.gallery
+        .gallery
             grid-template-columns: repeat(2, 1fr)
             
 @media screen and (max-width: 696px)
@@ -42,14 +36,14 @@
         ul
             display: none
     main
-        section.about,
-        section.services
+        .about,
+        .services
             width: 100vw
             .text
                 text-align: center
-        section#about .cover
+        #about .cover
             grid-column: 1
-        section.testimonials
+        .testimonials
             padding: 4rem 1rem
             p
                 &.client_name
