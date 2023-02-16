@@ -101,38 +101,38 @@ main {
   /* TESTIMONIALS */
   /* PROJECTS */
 }
-main section.about,
-main section.services {
+main .about,
+main .services {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-main section.about div,
-main section.services div {
+main .about div,
+main .services div {
   min-height: 350px;
 }
-main section.about .text,
-main section.services .text {
+main .about .text,
+main .services .text {
   padding: 7rem;
   margin: auto;
   max-width: calc(500px + 14rem);
 }
-main section.about .text p,
-main section.services .text p {
+main .about .text p,
+main .services .text p {
   color: hsl(232deg, 10%, 55%);
   line-height: 26px;
   letter-spacing: 0.02rem;
   padding-bottom: 2rem;
 }
-main section.about .text h2,
-main section.services .text h2 {
+main .about .text h2,
+main .services .text h2 {
   color: hsl(212deg, 27%, 19%);
   font-family: "Fraunces", serif;
   line-height: 3.2rem;
   font-size: 3rem;
   padding-bottom: 2rem;
 }
-main section.about .text a,
-main section.services .text a {
+main .about .text a,
+main .services .text a {
   font-family: "Fraunces", serif;
   color: hsl(212deg, 27%, 19%);
   text-transform: uppercase;
@@ -140,8 +140,8 @@ main section.services .text a {
   font-weight: 900;
   font-size: 15px;
 }
-main section.about .text a::before,
-main section.services .text a::before {
+main .about .text a::before,
+main .services .text a::before {
   content: "";
   position: absolute;
   margin-left: -8px;
@@ -153,95 +153,95 @@ main section.services .text a::before {
   z-index: -1;
   opacity: 0.5;
 }
-main section.about .text a:hover::before,
-main section.services .text a:hover::before {
+main .about .text a:hover::before,
+main .services .text a:hover::before {
   opacity: 1;
 }
-main section#about .cover {
+main #about .cover {
   background: url("../../public/images/desktop/image-transform.jpg") no-repeat center center/cover;
   grid-column: 2;
   grid-row: 1;
 }
-main section#about2 .cover {
+main #about2 .cover {
   background: url("../../public/images/desktop/image-stand-out.jpg") no-repeat bottom center/cover;
 }
-main section#about2 a::before {
+main #about2 a::before {
   background-color: hsl(7deg, 99%, 70%);
 }
-main section.services .cover:first-child {
+main .services .cover:first-child {
   background: url("../../public/images/desktop/image-graphic-design.jpg") no-repeat center center/cover;
 }
-main section.services .cover:first-child h2, main section.services .cover:first-child p {
+main .services .cover:first-child h2, main .services .cover:first-child p {
   color: hsl(167deg, 40%, 24%);
 }
-main section.services .cover:last-child {
+main .services .cover:last-child {
   background: url("../../public/images/desktop/image-photography.jpg") no-repeat center center/cover;
 }
-main section.services .cover:last-child h2, main section.services .cover:last-child p {
+main .services .cover:last-child h2, main .services .cover:last-child p {
   color: hsl(198deg, 62%, 26%);
 }
-main section.services .text {
+main .services .text {
   text-align: center;
   padding: 20rem 7rem 1rem;
 }
-main section.services .text h2 {
+main .services .text h2 {
   font-size: 1.8rem;
   line-height: 2rem;
   padding-bottom: 1.4rem;
 }
-main section.services .text p {
+main .services .text p {
   max-width: 350px;
   margin: auto;
   font-size: 15px;
 }
-main section.testimonials {
+main .testimonials {
   padding: 7rem;
   text-align: center;
 }
-main section.testimonials .wrapper {
+main .testimonials .wrapper {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
-main section.testimonials .wrapper div {
+main .testimonials .wrapper div {
   max-width: 310px;
   margin: auto;
   padding-top: 3rem;
 }
-main section.testimonials img {
+main .testimonials img {
   border-radius: 50%;
   width: 80px;
   margin-bottom: 3.4rem;
 }
-main section.testimonials h3 {
+main .testimonials h3 {
   text-transform: uppercase;
   font-family: "Fraunces", serif;
   color: hsl(210deg, 4%, 67%);
   letter-spacing: 0.3rem;
 }
-main section.testimonials p {
+main .testimonials p {
   line-height: 26px;
 }
-main section.testimonials p.client_name {
+main .testimonials p.client_name {
   font-family: "Fraunces", serif;
   font-weight: 900;
   color: hsl(212deg, 27%, 19%);
   margin-top: 3.4rem;
 }
-main section.testimonials p small {
+main .testimonials p small {
   color: hsl(210deg, 4%, 67%);
 }
-main section.gallery {
+main .gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   background-color: #333;
 }
-main section.gallery img {
+main .gallery img {
   width: 100%;
   height: 100%;
   transition: 0.4s;
 }
-main section.gallery img:hover {
+main .gallery img:hover {
   opacity: 0.5;
 }
 
@@ -274,26 +274,26 @@ footer a:hover {
   header h1 {
     font-size: 3rem;
   }
-  main section.about,
-main section.services {
+  main .about,
+main .services {
     grid-template-columns: repeat(auto-fill, minmax(calc(300px + 3rem), 1fr));
   }
-  main section.about .text,
-main section.services .text {
+  main .about .text,
+main .services .text {
     padding: 3rem;
   }
-  main section.about .text h2,
-main section.services .text h2 {
+  main .about .text h2,
+main .services .text h2 {
     line-height: normal;
     font-size: 2rem;
   }
-  main section.services .text {
+  main .services .text {
     padding: 16rem 3rem 1rem;
   }
-  main section.testimonials {
+  main .testimonials {
     padding: 4rem 3rem;
   }
-  main section.gallery {
+  main .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -315,21 +315,21 @@ main section.services .text h2 {
   nav ul {
     display: none;
   }
-  main section.about,
-main section.services {
+  main .about,
+main .services {
     width: 100vw;
   }
-  main section.about .text,
-main section.services .text {
+  main .about .text,
+main .services .text {
     text-align: center;
   }
-  main section#about .cover {
+  main #about .cover {
     grid-column: 1;
   }
-  main section.testimonials {
+  main .testimonials {
     padding: 4rem 1rem;
   }
-  main section.testimonials p.client_name {
+  main .testimonials p.client_name {
     margin-top: 2.2rem;
   }
 }
