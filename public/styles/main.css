@@ -53,6 +53,15 @@ nav ul {
 nav ul li {
   list-style: none;
 }
+nav ul li:last-child a {
+  font-family: "Fraunces", serif;
+  font-size: 13px;
+  color: black;
+  background-color: white;
+  padding: 9px 22px 10px;
+  border-radius: 30px;
+  text-transform: uppercase;
+}
 nav.mobile_menu .burger {
   cursor: pointer;
 }
